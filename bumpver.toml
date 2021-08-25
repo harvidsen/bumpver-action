@@ -8,11 +8,8 @@ push = true
 
 [bumpver.file_patterns]
 "README.md" = [
-    "Version {version}",
+    "current version is {version}",
 ]
 "bumpver.toml" = [
     'current_version = "{version}"',
-]
-".github/workflows/bumpver.yml" = [
-    'harvidsen/bumpver-action@{version}',
 ]
