@@ -1,0 +1,14 @@
+name: 'bumpver'
+description: 'Bump version using bumpver'
+inputs:
+  args:
+    description: 'Arguments for bumpver'
+    required: false
+outputs:
+  out:
+    description: 'Output of bumpver command'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}

@@ -1,0 +1,16 @@
+[bumpver]
+current_version = "21.08.1000"
+version_pattern = "YY.0M.BUILD[-TAG]"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[bumpver.file_patterns]
+"README.md" = [
+    "{version}",
+]
+"bumpver.toml" = [
+    'current_version = "{version}"',
+]
+
