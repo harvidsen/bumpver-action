@@ -1,6 +1,6 @@
 FROM python:3-alpine
 
-RUN apk add --no-cache bash
+RUN apk add --no-cache bash git
 
 RUN pip install --no-cache-dir bumpver
 

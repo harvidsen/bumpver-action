@@ -1,6 +1,14 @@
 name: 'bumpver'
 description: 'Bump version using bumpver'
 inputs:
+  git-user-email:
+    description: 'User email for tagging commit'
+    required: false
+    default: 'bumpver@action'
+  git-user-name:
+    description: 'User name for tagging commit'
+    required: false
+    default: 'bumpver-action'
   args:
     description: 'Arguments for bumpver'
     required: false
@@ -11,4 +19,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.git-user-email }}
+    - ${{ inputs.git-user-name }}
     - ${{ inputs.args }}

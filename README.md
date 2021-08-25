@@ -1,25 +1,26 @@
 # bumpver-action
-A Github Action to use the (bumpver)[https://github.com/mbarkhau/bumpver] 
+A Github Action to use the [bumpver](https://github.com/mbarkhau/bumpver)
 application to bump and tag branches, by running `bumpver update`.
-Version 21.08.1000 (maintained by this action). 
+Version v1 (maintained by this action). 
 
 ## Inputs
+- `git-user-email` **default**: `bumpver@action`
+-- User email for tagging commit
 
-## `args`
+- `git-user-name` **default**: `bumpver@action`
+-- User name for tagging commit
 
-**Optional** Arguments executed as `bumpver update $args`.
+- `args` 
+-- Arguments executed as `bumpver update $args`.
 
 ## Outputs
 
-## `out`
-
-Output of update command
+- `out`
+--Output of update command
 
 ## Example usage
 
 uses: harvidsen/bumpver-action@v1
 with:
   args: '--dry'
-
-
 
