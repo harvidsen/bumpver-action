@@ -1,4 +1,4 @@
-name: "Update version"
+name: "Bump version"
 on:
   push:
     branches:
@@ -13,4 +13,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.4
       - uses: harvidsen/bumpver-action@v1
-
+        with:
+          args: --major --dry
