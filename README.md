@@ -1,7 +1,7 @@
 # bumpver-action
 A Github Action to use the [bumpver](https://github.com/mbarkhau/bumpver)
-application to bump and tag branches, by running `bumpver update`. The current 
-version is v1.
+application to bump and tag branches, by running `bumpver update`. 
+The current version is v1.0.
 
 > ***Note:*** This action requires a `bumpver.toml` to be present when executed.
 

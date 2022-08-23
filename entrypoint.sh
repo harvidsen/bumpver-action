@@ -1,10 +1,12 @@
 #!/bin/bash
 set -e
 
-cd $GITHUB_WORKSPACE || return
+cd "${GITHUB_WORKSPACE}"
 
-git config user.email $1
-git config user.name $2
+echo "Configuring git"
+git config --global --add safe.directory "${GITHUB_WORKSPACE}"
+git config --global user.email $1
+git config --global user.name $2
 
 out=$(bumpver update $3)
 echo "$out"

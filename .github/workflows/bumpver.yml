@@ -12,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: harvidsen/bumpver-action@v1
+      
+      - uses: harvidsen/bumpver-action@e6ece92fc2a092b04b281c6b46a164ffdd6f8383
+        with:
+          args: --minor --dry
+
+      - uses: harvidsen/bumpver-action@e6ece92fc2a092b04b281c6b46a164ffdd6f8383
         with:
           args: --major --dry
