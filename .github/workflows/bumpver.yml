@@ -11,7 +11,7 @@ jobs:
   update-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v3.0.2
       
       - uses: harvidsen/bumpver-action@v1.0
         with:
