@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: harvidsen/bumpver-action@v1
+      - uses: harvidsen/bumpver-action@v1.1
         with:
           args: --major --dry
 
