@@ -17,6 +17,6 @@ jobs:
         with:
           args: --minor --dry
 
-      - uses: harvidsen/bumpver-action@1.1
+      - uses: harvidsen/bumpver-action@v1.1
         with:
           args: --major --dry
