@@ -10,4 +10,4 @@ git config --global user.name $2
 
 out=$(bumpver update $3)
 echo "$out"
-echo "::set-output name=out::$out"
+echo "name=$out" >> $GITHUB_OUTPUT
